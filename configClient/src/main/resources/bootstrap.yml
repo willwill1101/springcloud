@@ -1,4 +1,7 @@
-spring.cloud.config.name: addrress,config-client,user,zuul
+spring.cloud.config.name: addrress,config-client,user,zuul,dbconfig
 spring.cloud.config.label: master
 spring.cloud.config.profile: dev
-spring.cloud.config.uri: http://localhost:9999
+#spring.cloud.config.uri: http://localhost:9999
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
+spring.cloud.config.discovery.enabled: true
+spring.cloud.config.discovery.serviceId: configserver

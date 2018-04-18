@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@10.150.27.233:1521:PROD1
+    username: TRFF_APP
+    password: ehl1234
+    driver-class-name: oracle.jdbc.driver.OracleDriver
