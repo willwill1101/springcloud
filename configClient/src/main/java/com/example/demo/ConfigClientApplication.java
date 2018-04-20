@@ -16,10 +16,16 @@ public class ConfigClientApplication {
         SpringApplication.run(ConfigClientApplication.class, args);
     }
 
-    @Value("${spring.datasource.url}")
+    @Value("${yang}")
     String foo;
     @RequestMapping(value = "/hi")
     public String hi(){
         return foo;
+    }
+    @Value("${info.description}")
+    String foo2;
+    @RequestMapping(value = "/hi2")
+    public String hi2(){
+        return foo2;
     }
 }
